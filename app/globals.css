@@ -41,7 +41,6 @@
   --shadow-creditCard: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
   /* Custom background images */
-  --background-image-gradient-mesh: linear-gradient(to bottom right, #dbeafe, #bfdbfe);
   --background-image-bank-gradient: linear-gradient(90deg, #0179fe 0%, #4893ff 100%);
 }
 
@@ -355,7 +354,7 @@
 .profile-banner {
   height: 120px;
   width: 100%;
-  background-image: var(--background-image-gradient-mesh);
+  background-image: url('/icons/gradient-mesh.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
