@@ -53,7 +53,7 @@ const AuthForm = ({ type }: { type: 'sign-in' | 'sign-up' }) => {
           address1:data.address1!,
           city:data.city!,
           state:data.state!,
-          postalcode:data.postalCode!,
+          postalCode:data.postalCode!,
           dateOfBirth:data.dateOfBirth!,
           ssn:data.ssn!,
           email:data.email,
