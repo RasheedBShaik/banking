@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import BankCard from "./BankCard";
 const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
+  if (!user) return null;
+
   return (
     <aside className="right-sidebar">
       <section className="flex flex-col pb-8">
@@ -14,7 +16,7 @@ const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
           </div>
           <div className="profile-details">
             <h1 className="profile-name">
-              {user.name}
+              {user.firstName} {user.lastName}
             </h1>
             <p className="profile-email">{user.email}</p>
           </div>
